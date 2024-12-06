@@ -16,7 +16,7 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(trpc-cpp)
 
-# Then, import cpp-telemetry-opentelemetry
+# Then, import trpc_cpp_database_mysql
 FetchContent_Declare(
     trpc_cpp_database_mysql
     GIT_REPOSITORY    https://github.com/KosmosFult/cpp-database-mysql.git
