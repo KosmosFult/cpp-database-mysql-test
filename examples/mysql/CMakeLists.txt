@@ -16,14 +16,14 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(trpc-cpp)
 
-# Then, import trpc_cpp_database_mysql
+# Then, import trpc_cpp_database
 FetchContent_Declare(
-    trpc_cpp_database_mysql
+    trpc_cpp_database
     GIT_REPOSITORY    https://github.com/KosmosFult/cpp-database-mysql.git
     GIT_TAG           main
-    SOURCE_DIR        ${CMAKE_CURRENT_SOURCE_DIR}/cmake_third_party/trpc_cpp_database_mysql
+    SOURCE_DIR        ${CMAKE_CURRENT_SOURCE_DIR}/cmake_third_party/trpc_cpp_database
 )
-FetchContent_MakeAvailable(trpc_cpp_database_mysql)
+FetchContent_MakeAvailable(trpc_cpp_database)
 
 
 

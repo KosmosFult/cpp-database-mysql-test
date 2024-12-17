@@ -15,11 +15,11 @@ trpc_workspace()
 
 
 git_repository(
-    name = "trpc_cpp_database_mysql",
+    name = "trpc_cpp_database",
     remote = "https://github.com/KosmosFult/cpp-database-mysql.git",
     branch = "main",
 )
 
-load("@trpc_cpp_database_mysql//trpc:workspace.bzl", "trpc_database_mysql_workspace")
-trpc_database_mysql_workspace()
+load("@trpc_cpp_database//trpc:workspace.bzl", "trpc_cpp_database_workspace")
+trpc_cpp_database_workspace()
 
